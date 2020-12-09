@@ -15,6 +15,7 @@ body {
     margin: 1rem;
     color: white;
     border-radius: 8px;
+    font-size: xx-large;
 }
 #input-box:hover{
     border-color: rgb(40, 168, 234);
@@ -29,6 +30,7 @@ body {
     margin-top: 28%;
     border-radius: 8px;
     color: white;
+    font-size: xx-large;
 }
 #button{
     padding: 0.5rem 1rem;
