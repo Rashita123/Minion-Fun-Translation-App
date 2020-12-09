@@ -8,13 +8,19 @@ function constructURL(text){
     return serverURL+"?text="+text;
 }
 
-var inputText=input.value;
+function errorHandler(error){
+    console.log("Error Occured",error);
+    alert("Error Occured. Try again after some time!");
+}
+
 function clickHandler(){
+    var inputText=input.value;
     fetch(constructURL(inputText))
     .then (response => response.json())
     .then(json => {
         output.innerText=json.contents.translated;
     })
+    .catch(errorHandler);
 }
 
 button.addEventListener("click",clickHandler);
